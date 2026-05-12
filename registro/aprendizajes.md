@@ -2,11 +2,13 @@
 
 ## Feedback
 
-_Añade aquí preferencias, correcciones o ajustes para el agente._
+_Preferencias y correcciones del usuario — el agente las aplica en cada ejecución._
 
 | Fecha | Feedback |
 |-------|----------|
-| | |
+| 2026-05-12 | Solo documentos oficiales primarios (boe.es, cnmc.es, ree.es, miteco.gob.es). No noticias. |
+| 2026-05-12 | Validar fecha de publicación del documento antes de incluirlo. Solo últimos 7 días. |
+| 2026-05-12 | Incluir enlace directo al documento oficial, nunca a una noticia sobre él. |
 
 ---
 
@@ -31,9 +33,20 @@ _Añade aquí preferencias, correcciones o ajustes para el agente._
 
 ---
 
+## Errores registrados
+
+_El agente añade aquí cada error encontrado durante la ejecución para mejorar las siguientes._
+
+| Fecha | Fuente/URL | Tipo de error | Acción tomada |
+|-------|------------|---------------|---------------|
+| 2026-05-12 | boe.es datosabiertos API | HTTP 403 desde entorno cloud | Cambiado a RSS oficial (boe.php?s=1/3/5) |
+| 2026-05-12 | cnmc.es, ree.es, miteco.gob.es | HTTP 403 en WebFetch directo | Usar WebSearch + WebFetch selectivo solo en URLs prometedoras |
+
+---
+
 ## Patrones detectados
 
-_El agente añade aquí patrones observados: fuentes especialmente activas, temas en auge, reguladores que publican frecuentemente, etc._
+_Observaciones del agente sobre frecuencia de publicación, temas en auge, etc._
 
 | Fecha | Patrón |
 |-------|--------|

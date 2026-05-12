@@ -1,1 +1,137 @@
-[]
+[
+  {
+    "id": "https://www.miteco.gob.es/es/energia/participacion/2026/detalle-participacion-publica-k-817.html",
+    "titulo": "Consulta pública previa estándar excelencia social y territorial proyectos renovables y almacenamiento (RDL 7/2026)",
+    "fuente": "MITECO",
+    "tema": "RENOVABLES",
+    "fecha_publicacion": "2026-04-15",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "https://www.miteco.gob.es/es/energia/participacion/2026/detalle-participacion-publica-k-819.html",
+    "titulo": "Consulta pública previa Zonas de Aceleración Renovable (ZAR) — Real Decreto procedimiento designación y criterios",
+    "fuente": "MITECO",
+    "tema": "RENOVABLES",
+    "fecha_publicacion": "2026-04-15",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-A-2026-6544",
+    "titulo": "Real Decreto-ley 7/2026, de 20 de marzo — Plan Integral de Respuesta a la Crisis en Oriente Medio (medidas energéticas: ZAR, garantías almacenamiento, estándar excelencia)",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-03-20",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-B-2026-14192",
+    "titulo": "Instalación híbrida Olinda 110,53 MW (BESS 52,61 MW + FV 57,92 MW), Lightsource bp — información pública AAP/AAC, Onda (Castellón)",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-05-11",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-B-2026-14191",
+    "titulo": "BESS Delphinus (18 MW) + Draco (18 MW) + FV 91,2 MW, Solaria — hibridación, Toro (Zamora)",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-05-11",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-B-2026-14564",
+    "titulo": "Módulo almacenamiento Hibridación Los Arcos 26,74 MW BESS (140 MWh) + FV 43,9 MW — Andorra (Teruel)",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-05-05",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-A-2026-3212",
+    "titulo": "Real Decreto 88/2026, de 11 de febrero — Reglamento general de suministro, comercialización y agregación de energía eléctrica",
+    "fuente": "BOE",
+    "tema": "FLEXIBILIDAD",
+    "fecha_publicacion": "2026-02-12",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-A-2026-9789",
+    "titulo": "Resolución 20 abril 2026 — Precio medio energía interrumpibilidad Q2 2026: 43,67 €/MWh (territorios no peninsulares)",
+    "fuente": "BOE",
+    "tema": "FLEXIBILIDAD",
+    "fecha_publicacion": "2026-04-20",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "https://www.cnmc.es/consultas-publicas/energia/patrones-funcionamiento",
+    "titulo": "CNMC consulta pública patrones de funcionamiento de almacenamiento para capacidad de acceso a redes de distribución",
+    "fuente": "CNMC",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-04-01",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "https://www.cnmc.es/prensa/mapas-capacidad-redes-electricas-20260415",
+    "titulo": "CNMC publica mapas con capacidad disponible en redes eléctricas (transporte y distribución)",
+    "fuente": "CNMC",
+    "tema": "RENOVABLES",
+    "fecha_publicacion": "2026-04-15",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "DOUE-L-2026-80666",
+    "titulo": "Recomendación (UE) 2026/1008 de la Comisión, de 30 de abril — resumen condiciones contractuales contratos de suministro de energía",
+    "fuente": "BOE",
+    "tema": "CONTRATOS",
+    "fecha_publicacion": "2026-04-30",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "DOUE-Z-2026-70003",
+    "titulo": "Comunicación Comisión UE — orientación sobre áreas para infraestructura de red y almacenamiento bajo Directiva renovables (art. 15 sexies)",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-04-15",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "https://www.sistemaelectrico-ree.es/sites/default/files/informes/2026/ise-2025.pdf",
+    "titulo": "REE Informe Sistema Eléctrico 2025 — renovables 68,7% parque instalado; 11,6 GW nuevos; demanda +2,8%",
+    "fuente": "REE",
+    "tema": "RENOVABLES",
+    "fecha_publicacion": "2026-03-01",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa/2025/11/el-sistema-electrico-peninsular-contara-de-enero-a-junio-con-1725-MW-respuesta-activa-demanda",
+    "titulo": "REE — 1.725 MW respuesta activa de la demanda (SRAD) peninsular H1 2026",
+    "fuente": "REE",
+    "tema": "FLEXIBILIDAD",
+    "fecha_publicacion": "2025-11-01",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "EU-BESS-high-risk-2026-05",
+    "titulo": "UE amplía prohibición financiación EIB/EIF a BESS con conversores de potencia de países alto riesgo",
+    "fuente": "CNMC",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-05-05",
+    "fecha_reportada": "2026-05-12",
+    "semana": "2026-W20"
+  }
+]

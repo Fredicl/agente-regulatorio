@@ -133,5 +133,32 @@
     "fecha_publicacion": "2026-05-05",
     "fecha_reportada": "2026-05-12",
     "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-B-2026-15229",
+    "titulo": "Gazules I Hibridación — nueva información pública (45,83 MW BESS + FV 49,8 MW), modificación subestación SET OPDE Gazules, Alcalá de los Gazules (Cádiz)",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-05-12",
+    "fecha_reportada": "2026-05-18",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-B-2026-15354",
+    "titulo": "Módulo almacenamiento Hibridación Plana de la Pena 1, 26,74 MW BESS (126 MWh, Powin Stack750) + FV 43,9 MW — Botorrita/La Muela/María de Huerva (Zaragoza). PFot-ALM-122",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-05-13",
+    "fecha_reportada": "2026-05-18",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "https://www.idae.es/noticias/el-idae-asigna-440-millones-de-la-segunda-subasta-nacional-de-hidrogeno-renovable",
+    "titulo": "IDAE asigna 439,4 M€ en segunda subasta AaaS Hidrógeno Renovable — NOON II (80 MW) + ODIN (140 MW) de Iberdrola en Huelva y QUIXOTGEN (30 MW) de Capital Energy en Albacete — 250 MW electrólisis total",
+    "fuente": "MITECO",
+    "tema": "RENOVABLES",
+    "fecha_publicacion": "2026-05-13",
+    "fecha_reportada": "2026-05-18",
+    "semana": "2026-W20"
   }
 ]

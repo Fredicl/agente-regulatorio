@@ -16,6 +16,9 @@ _Preferencias y correcciones del usuario — el agente las aplica en cada ejecuc
 
 | Fecha | Fuente | Descripción del tema | Referencia |
 |-------|--------|---------------------|------------|
+| 2026-05-18 | MITECO/IDAE | Segunda subasta AaaS Hidrógeno Renovable: 439,4 M€ asignados — NOON II + ODIN (Iberdrola, Huelva) + QUIXOTGEN (Capital Energy, Albacete) — 250 MW electrólisis | idae.es/noticias/el-idae-asigna-440-millones |
+| 2026-05-18 | BOE | Gazules I Hibridación nueva IP — 45,83 MW BESS + FV 49,8 MW, Cádiz (segunda IP por modificación subestación) | BOE-B-2026-15229 |
+| 2026-05-18 | BOE | Hibridación Plana de la Pena 1 — 26,74 MW BESS (126 MWh, Powin) + FV 43,9 MW, Zaragoza | BOE-B-2026-15354 |
 | 2026-05-12 | MITECO | Cuatro consultas públicas RDL 7/2026: ZAR, excelencia social, beneficios territoriales, biometano (cierre 15 mayo) | k-817, k-819 |
 | 2026-05-12 | BOE | RDL 7/2026: medidas almacenamiento — derogación garantías, devolución desde 22 mayo | BOE-A-2026-6544 |
 | 2026-05-12 | BOE | Instalación híbrida Olinda 110,53 MW BESS+FV, Lightsource bp, Castellón | BOE-B-2026-14192 |
@@ -39,6 +42,9 @@ _El agente añade aquí cada error encontrado durante la ejecución para mejorar
 
 | Fecha | Fuente/URL | Tipo de error | Acción tomada |
 |-------|------------|---------------|---------------|
+| 2026-05-18 | boe.es RSS (boe.php?s=1,3,5) | HTTP 403 recurrente — mismo error que semana anterior | Estrategia: WebSearch con filtros de dominio + validación cruzada |
+| 2026-05-18 | boe.es sumario/páginas directas | HTTP 403 en todos los WebFetch de boe.es | WebSearch es la única alternativa funcional |
+| 2026-05-18 | cnmc.es, ree.es, miteco.gob.es | HTTP 403 en todos los WebFetch | Idem semana anterior — WebSearch como alternativa |
 | 2026-05-12 | boe.es datosabiertos API | HTTP 403 desde entorno cloud | Cambiado a RSS oficial (boe.php?s=1/3/5) |
 | 2026-05-12 | cnmc.es, ree.es, miteco.gob.es | HTTP 403 en WebFetch directo | Usar WebSearch + WebFetch selectivo solo en URLs prometedoras |
 
@@ -53,5 +59,9 @@ _Observaciones del agente sobre frecuencia de publicación, temas en auge, etc._
 | 2026-05-12 | BOE MUY ACTIVO en proyectos BESS hibridación: semana 5-11 mayo = 4 proyectos, 116 MW BESS + 136 MW FV. El ritmo de hibridación es elevado (decenas de proyectos/mes). |
 | 2026-05-12 | MITECO tiene 4 consultas abiertas simultáneas derivadas del RDL 7/2026 (ZAR, excelencia, beneficios, biometano) — plazo muy corto (15 mayo). Patrón de regulación secundaria derivada de RDL urgente. |
 | 2026-05-12 | Almacenamiento es el tema más activo. Casi todas las semanas hay proyectos BESS/hibridación en información pública. |
+| 2026-05-18 | Semana W20 (11-17 mayo) significativamente más tranquila que la anterior: solo 3 documentos vs 14. Normal tras la avalancha del RDL 7/2026. |
+| 2026-05-18 | La CNMC resolución RDC/DE/003/25 (Permisos de Acceso Flexibles) sigue pendiente de publicación en BOE tras cierre de consulta el 20/03/2026 — vigilar próximas semanas. |
+| 2026-05-18 | Mecanismo AaaS para H2 renovable sigue siendo el principal instrumento de contratos públicos de larga duración en España — potencial extensión a almacenamiento/flexibilidad. |
+| 2026-05-18 | Consulta MITECO k-820 (nudo Maciñeira, transición justa As Pontes): deadline 19/05 — muy corto. Patrón: MITECO abre consultas con plazos de 3-4 semanas. |
 | 2026-05-12 | Apagón 28 abril ha generado regulación reactiva: CNMC acelera procedimiento control tensión P.O.7.4, investigaciones de expedientes, tensión institucional CNMC-REE. |
 | 2026-05-12 | La API REST del BOE (boe.es/datosabiertos/api/) está bloqueada por el sandbox del agente — usar WebSearch como alternativa. Los sites boe.es y miteco.gob.es devuelven 403 en WebFetch. |

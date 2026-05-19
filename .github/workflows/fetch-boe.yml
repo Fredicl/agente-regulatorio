@@ -22,62 +22,56 @@ jobs:
 
           fecha_limite = datetime.utcnow() - timedelta(days=7)
 
-          # BATERÍAS / ALMACENAMIENTO
-          kw_baterias = [
-              'almacenamiento energético', 'almacenamiento de energía',
-              'baterías', 'batería electroquímica', 'bess',
-              'bombeo hidráulico', 'almacenamiento por bombeo',
-              'hibridación', 'instalación híbrida',
-              'sistema de almacenamiento',
-          ]
-
-          # FLEXIBILIDAD / MERCADOS DE AJUSTE
+          # MERCADOS DE FLEXIBILIDAD Y AJUSTE
+          # Regulación que afecta directamente a agregadores y gestores de demanda
           kw_flexibilidad = [
-              'flexibilidad de la demanda', 'flexibilidad energética',
-              'gestión de la demanda', 'respuesta de la demanda',
+              'agregador independiente', 'agregadores independientes',
+              'agregador de demanda', 'agregación de demanda',
               'respuesta activa de la demanda', 'srad',
-              'agregador', 'agregadores', 'agregador independiente',
-              'interrumpibilidad', 'servicio de interrumpibilidad',
+              'gestión de la demanda', 'flexibilidad de la demanda',
               'servicios de ajuste', 'mercados de ajuste',
-              'mercado de capacidad', 'reserva de capacidad',
-              'balance eléctrico', 'red de frecuencia',
-              'demand response',
+              'mercado de balance', 'mercado de capacidad',
+              'reserva de regulación', 'reserva de frecuencia',
+              'banda de regulación', 'regulación secundaria',
+              'regulación terciaria', 'reposición de reservas',
+              'interrumpibilidad', 'servicio de interrumpibilidad',
+              'precio de la interrumpibilidad',
+              'recurso de balance', 'proveedor de servicios de balance',
+              'demand response', 'rted', 'rteda',
           ]
 
-          # CONTRATOS Y MERCADOS
-          kw_contratos = [
-              'contrato de diferencias', 'contratos por diferencias', 'cfd',
-              'power purchase agreement', 'ppa', 'contrato bilateral',
-              'mercado a plazo', 'omip', 'omie',
-              'subasta de energía', 'subasta renovable', 'reer', 'rera',
-              'régimen económico de energías renovables',
-              'precio de la energía eléctrica', 'tarifa regulada',
+          # ALMACENAMIENTO COMO RECURSO DE FLEXIBILIDAD
+          kw_baterias = [
+              'almacenamiento energético', 'sistema de almacenamiento',
+              'baterías de almacenamiento', 'bess',
+              'almacenamiento por bombeo', 'bombeo hidráulico',
+              'hibridación', 'instalación híbrida de almacenamiento',
+              'acceso flexible', 'permisos de acceso flexible',
+              'patrones de funcionamiento de almacenamiento',
           ]
 
-          # REGULACIÓN GENERAL DEL SISTEMA ELÉCTRICO
-          kw_regulacion = [
-              'sector eléctrico', 'sistema eléctrico',
-              'mercado eléctrico', 'mercado mayorista',
-              'acceso y conexión', 'acceso a la red', 'permisos de acceso',
-              'red de transporte', 'red de distribución',
+          # DISEÑO DE MERCADO Y REGULACIÓN DE CNMC/REE
+          # Normativa que cambia las reglas del juego en mercados eléctricos
+          kw_mercado = [
+              'diseño del mercado eléctrico', 'diseño de mercado',
+              'mercado mayorista de electricidad',
               'procedimiento de operación', 'instrucción de operación',
-              'energías renovables', 'generación distribuida',
-              'autoconsumo', 'comunidad energética',
-              'zonas de aceleración renovable', 'zar',
-              'plan de desarrollo', 'planificación energética',
+              'circular de la cnmc', 'resolución de la cnmc',
+              'acceso y conexión a las redes',
+              'código de red', 'reglamento de red',
+              'capacidad de acceso', 'capacidad de conexión',
+              'suministro de electricidad', 'comercialización de electricidad',
+              'sector eléctrico', 'ley del sector eléctrico',
+              'mercado ibérico', 'mibel',
           ]
-
-          todos_keywords = kw_baterias + kw_flexibilidad + kw_contratos + kw_regulacion
 
           def clasificar_tema(texto):
-              if any(kw in texto for kw in kw_baterias):
-                  return 'BATERIAS'
               if any(kw in texto for kw in kw_flexibilidad):
                   return 'FLEXIBILIDAD'
-              if any(kw in texto for kw in kw_contratos):
-                  return 'CONTRATOS'
-              if any(kw in texto for kw in kw_regulacion):
-                  return 'NOVEDADES'
+              if any(kw in texto for kw in kw_baterias):
+                  return 'BATERIAS'
+              if any(kw in texto for kw in kw_mercado):
+                  return 'MERCADO'
               return None
 
           # Excluir autorizaciones individuales de proyectos

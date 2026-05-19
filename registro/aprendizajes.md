@@ -9,6 +9,10 @@ _Preferencias y correcciones del usuario — el agente las aplica en cada ejecuc
 | 2026-05-12 | Solo documentos oficiales primarios (boe.es, cnmc.es, ree.es, miteco.gob.es). No noticias. |
 | 2026-05-12 | Validar fecha de publicación del documento antes de incluirlo. Solo últimos 7 días. |
 | 2026-05-12 | Incluir enlace directo al documento oficial, nunca a una noticia sobre él. |
+| 2026-05-13 | NO incluir autorizaciones individuales de proyectos (plantas concretas, BESS individuales, nudos específicos). Solo regulación de alcance general. |
+| 2026-05-13 | NO incluir recomendaciones para ninguna empresa concreta. Solo el hecho regulatorio. |
+| 2026-05-13 | Estructura del email en 3 secciones: Baterías y Almacenamiento / Mercados de Flexibilidad / Novedades Regulatorias. |
+| 2026-05-13 | NO incluir datos estadísticos de mercado sin cambio normativo (precios spot, datos de generación mensual). |
 
 ---
 

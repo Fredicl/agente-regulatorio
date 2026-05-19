@@ -22,26 +22,74 @@ jobs:
 
           fecha_limite = datetime.utcnow() - timedelta(days=7)
 
-          # Solo regulación general — excluir autorizaciones individuales de proyectos
-          keywords_incluir = [
-              'real decreto', 'orden ministerial', 'circular', 'resolución',
-              'reglamento', 'subasta', 'concurso', 'procedimiento de operación',
-              'instrucción de operación', 'plan', 'consulta pública',
-              'almacenamiento', 'baterías', 'bater', 'bess', 'bombeo',
-              'flexibilidad', 'interrumpibilidad', 'agregad', 'demanda',
-              'renovable', 'fotovoltai', 'eólica', 'eolica', 'solar',
-              'ppa', 'contrato bilateral', 'mercado a plazo', 'omip',
-              'acceso', 'conexión', 'red de transporte', 'cnmc', 'ree',
-              'hibridación', 'hibridacion', 'energía eléctrica'
+          # BATERÍAS / ALMACENAMIENTO
+          kw_baterias = [
+              'almacenamiento energético', 'almacenamiento de energía',
+              'baterías', 'batería electroquímica', 'bess',
+              'bombeo hidráulico', 'almacenamiento por bombeo',
+              'hibridación', 'instalación híbrida',
+              'sistema de almacenamiento',
           ]
+
+          # FLEXIBILIDAD / MERCADOS DE AJUSTE
+          kw_flexibilidad = [
+              'flexibilidad de la demanda', 'flexibilidad energética',
+              'gestión de la demanda', 'respuesta de la demanda',
+              'respuesta activa de la demanda', 'srad',
+              'agregador', 'agregadores', 'agregador independiente',
+              'interrumpibilidad', 'servicio de interrumpibilidad',
+              'servicios de ajuste', 'mercados de ajuste',
+              'mercado de capacidad', 'reserva de capacidad',
+              'balance eléctrico', 'red de frecuencia',
+              'demand response',
+          ]
+
+          # CONTRATOS Y MERCADOS
+          kw_contratos = [
+              'contrato de diferencias', 'contratos por diferencias', 'cfd',
+              'power purchase agreement', 'ppa', 'contrato bilateral',
+              'mercado a plazo', 'omip', 'omie',
+              'subasta de energía', 'subasta renovable', 'reer', 'rera',
+              'régimen económico de energías renovables',
+              'precio de la energía eléctrica', 'tarifa regulada',
+          ]
+
+          # REGULACIÓN GENERAL DEL SISTEMA ELÉCTRICO
+          kw_regulacion = [
+              'sector eléctrico', 'sistema eléctrico',
+              'mercado eléctrico', 'mercado mayorista',
+              'acceso y conexión', 'acceso a la red', 'permisos de acceso',
+              'red de transporte', 'red de distribución',
+              'procedimiento de operación', 'instrucción de operación',
+              'energías renovables', 'generación distribuida',
+              'autoconsumo', 'comunidad energética',
+              'zonas de aceleración renovable', 'zar',
+              'plan de desarrollo', 'planificación energética',
+          ]
+
+          todos_keywords = kw_baterias + kw_flexibilidad + kw_contratos + kw_regulacion
+
+          def clasificar_tema(texto):
+              if any(kw in texto for kw in kw_baterias):
+                  return 'BATERIAS'
+              if any(kw in texto for kw in kw_flexibilidad):
+                  return 'FLEXIBILIDAD'
+              if any(kw in texto for kw in kw_contratos):
+                  return 'CONTRATOS'
+              if any(kw in texto for kw in kw_regulacion):
+                  return 'NOVEDADES'
+              return None
 
           # Excluir autorizaciones individuales de proyectos
           keywords_excluir = [
               'información pública', 'informacion publica',
-              'evaluación de impacto ambiental', 'evaluacion de impacto',
-              'concesión de aguas', 'servidumbre', 'expropiación',
+              'evaluación de impacto ambiental', 'evaluacion de impacto ambiental',
+              'concesión de aguas', 'servidumbre de paso',
+              'expropiación forzosa',
               'autorización administrativa previa',
               'autorización de construcción',
+              'declaración de impacto ambiental',
+              'estudio de impacto ambiental',
           ]
 
           feeds = [
@@ -94,15 +142,8 @@ jobs:
                       if any(kw in texto for kw in keywords_excluir):
                           continue
 
-                      # Filtrar por keywords de inclusión
-                      tema = None
-                      if any(kw in texto for kw in ['almacenamiento', 'bater', 'bess', 'bombeo', 'hibridaci']):
-                          tema = 'BATERIAS'
-                      elif any(kw in texto for kw in ['flexibilidad', 'interrumpibilidad', 'agregad', 'ppa', 'contrato bilateral', 'mercado a plazo', 'omip', 'demanda']):
-                          tema = 'FLEXIBILIDAD'
-                      elif any(kw in texto for kw in ['renovable', 'fotovoltai', 'eólica', 'eolica', 'solar', 'real decreto', 'orden ministerial', 'circular', 'reglamento', 'acceso', 'conexión', 'energía eléctrica']):
-                          tema = 'NOVEDADES'
-
+                      # Clasificar por tema
+                      tema = clasificar_tema(texto)
                       if tema is None:
                           continue
 

@@ -44,29 +44,31 @@ Si no puedes leer algún archivo, continúa igualmente y regístralo en la secci
 
 ---
 
-## Paso 1 — BOE vía RSS oficial (últimos 7 días)
+## Paso 1 — BOE vía datos pre-procesados (GitHub Action)
 
-El BOE publica RSS oficiales que funcionan desde cualquier entorno sin bloqueos. Úsalos como fuente primaria.
+Un GitHub Action descarga el RSS del BOE cada día laborable y guarda los resultados ya filtrados en `datos/boe-semana.json`. Lee ese archivo directamente — no intentes hacer fetch de boe.es, está bloqueado desde entornos cloud.
 
-Haz fetch de estos tres feeds (son XML):
+Lee el archivo `datos/boe-semana.json`. Su estructura es:
+```json
+{
+  "generado": "YYYY-MM-DDTHH:MM:SSZ",
+  "rango_inicio": "YYYY-MM-DD",
+  "rango_fin": "YYYY-MM-DD",
+  "total": N,
+  "items": [
+    {
+      "id": "BOE-A-2026-NNNNN",
+      "titulo": "Título del documento",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-...",
+      "tema": "BATERIAS / FLEXIBILIDAD / NOVEDADES",
+      "fecha_publicacion": "YYYY-MM-DD",
+      "descripcion": "Extracto del documento"
+    }
+  ]
+}
 ```
-https://www.boe.es/rss/boe.php?s=1   ← Sección I: Disposiciones generales (RD, OM — máxima prioridad)
-https://www.boe.es/rss/boe.php?s=3   ← Sección III: Otras disposiciones (resoluciones, circulares)
-https://www.boe.es/rss/boe.php?s=5   ← Sección V: Anuncios oficiales (subastas, consultas)
-```
 
-Del XML, cada `<item>` tiene:
-- `<title>` — título del documento
-- `<link>` — URL directa al texto oficial (boe.es/diario_boe/txt.php?id=BOE-A-...)
-- `<pubDate>` — fecha de publicación
-
-**Validación de fecha obligatoria:** Extrae la fecha de `<pubDate>` y compárala con la fecha de hace 7 días. Si `pubDate` es anterior a ese límite, descarta el item. No incluyas ningún documento fuera del rango.
-
-Filtra los items cuyo `<title>` contenga palabras clave de los 4 temas prioritarios.
-
-Para cada item relevante que pase el filtro de fecha y tema, haz WebFetch de su `<link>` para obtener el texto oficial completo. Guarda: identificador BOE (BOE-A-YYYY-NNNNN), título, fecha de publicación, URL directa al documento.
-
-Si algún RSS devuelve error, regístralo en `aprendizajes.md` (sección Errores) y continúa con los demás.
+Usa estos items como base para el BOE. Si `datos/boe-semana.json` está vacío o tiene más de 7 días de antigüedad (campo `generado`), regístralo como incidencia pero continúa con las demás fuentes.
 
 ---
 

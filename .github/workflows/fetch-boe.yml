@@ -8,8 +8,12 @@ on:
 jobs:
   fetch-boe:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fetch RSS del BOE y guardar JSON
         run: |
@@ -182,4 +186,4 @@ jobs:
           git config user.name "BOE Fetcher"
           git add datos/boe-semana.json
           git diff --staged --quiet || git commit -m "data: BOE $(date +%Y-%m-%d)"
-          git push
+          git push origin main

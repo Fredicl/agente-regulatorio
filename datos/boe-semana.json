@@ -1,8 +1,18 @@
 {
-  "generado": "2026-05-21T10:45:30Z",
-  "rango_inicio": "2026-05-14",
-  "rango_fin": "2026-05-21",
-  "total": 0,
+  "generado": "2026-05-22T10:28:03Z",
+  "rango_inicio": "2026-05-15",
+  "rango_fin": "2026-05-22",
+  "total": 1,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-B-2026-16554",
+      "titulo": "Anuncio de formalización de contratos de: Mesa del Congreso de los Diputados. Objeto: Contrato mixto de suministro para la actualización del sistema de catalogación de vídeo, de los servidores de vídeo y del sistema de almacenamiento de vídeo del Centro de Producción de Televisión del Congreso de los Diputados, para la adquisición de un sistema de subtitulado automático en directo y su instalación y puesta en marcha, así como para el servicio de soporte y mantenimiento. Expediente: CON-P2025/0300025.0.",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-16554",
+      "seccion": "Seccion V - Anuncios",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-05-22",
+      "descripcion": "V. Anuncios. - A. Contratación del Sector Público - CORTES GENERALES - Referencia: BOE-B-2026-16554 - KBytes: 213 - Páginas: 2"
+    }
+  ]
 }

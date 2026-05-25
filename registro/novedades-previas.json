@@ -160,5 +160,23 @@
     "fecha_publicacion": "2026-05-13",
     "fecha_reportada": "2026-05-18",
     "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-A-2026-10602",
+    "titulo": "Resolución de 11 de mayo de 2026, de la CNMC, por la que se modifica el procedimiento de operación eléctrico P.O. 7.5 para mejorar la eficiencia en la asignación del SRAD",
+    "fuente": "BOE",
+    "tema": "FLEXIBILIDAD",
+    "fecha_publicacion": "2026-05-15",
+    "fecha_reportada": "2026-05-25",
+    "semana": "2026-W21"
+  },
+  {
+    "id": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/mayo/el-miteco-propone-una-tercera-modificacion-de-aspectos-puntuales.html",
+    "titulo": "Trámite de audiencia: Tercera Modificación de la Planificación de electricidad con horizonte 2026 — Plan de Desarrollo de la Red de Transporte (MAP-3-2026)",
+    "fuente": "MITECO",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-05-21",
+    "fecha_reportada": "2026-05-25",
+    "semana": "2026-W21"
   }
 ]

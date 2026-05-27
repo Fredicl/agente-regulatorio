@@ -1,18 +1,8 @@
 {
-  "generado": "2026-05-25T11:15:45Z",
-  "rango_inicio": "2026-05-18",
-  "rango_fin": "2026-05-25",
-  "total": 1,
+  "generado": "2026-05-27T10:59:54Z",
+  "rango_inicio": "2026-05-20",
+  "rango_fin": "2026-05-27",
+  "total": 0,
   "errores": [],
-  "items": [
-    {
-      "id": "BOE-A-2026-11295",
-      "titulo": "Resolución de 29 de abril de 2026, de la Dirección General de Política Energética y Minas, por la que se otorga a Elawan Fotovoltaica Campanario 2, SL, autorización administrativa de construcción para el proyecto de parque eólico «Campanario II híbrido», de 10 MW de potencia instalada, para su hibridación con la instalación solar fotovoltaica «FV Campanario II», de 48,12 MW de potencia instalada, y para parte de su infraestructura de evacuación, conformando una instalación híbrida de 58,12 MW de potencia instalada, en Bonete (Albacete), y se declara, en concreto, su utilidad pública.",
-      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11295",
-      "seccion": "Seccion III - Otras disposiciones",
-      "tema": "BATERIAS",
-      "fecha_publicacion": "2026-05-25",
-      "descripcion": "III. Otras disposiciones - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Instalaciones eléctricas - Referencia: BOE-A-2026-11295 - KBytes: 276 - Páginas: 9"
-    }
-  ]
+  "items": []
 }

@@ -1,0 +1,189 @@
+name: Fetch BOE diario
+
+on:
+  schedule:
+    - cron: '0 7 * * 1-5'  # 8:00h Madrid (lunes a viernes)
+  workflow_dispatch:        # permite ejecutarlo manualmente
+
+jobs:
+  fetch-boe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch RSS del BOE y guardar JSON
+        run: |
+          python3 << 'EOF'
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          import json
+          from datetime import datetime, timedelta
+          import email.utils
+
+          fecha_limite = datetime.utcnow() - timedelta(days=7)
+
+          # MERCADOS DE FLEXIBILIDAD Y AJUSTE
+          # Regulación que afecta directamente a agregadores y gestores de demanda
+          kw_flexibilidad = [
+              'agregador independiente', 'agregadores independientes',
+              'agregador de demanda', 'agregación de demanda',
+              'respuesta activa de la demanda', 'srad',
+              'gestión de la demanda', 'flexibilidad de la demanda',
+              'servicios de ajuste', 'mercados de ajuste',
+              'mercado de balance', 'mercado de capacidad',
+              'reserva de regulación', 'reserva de frecuencia',
+              'banda de regulación', 'regulación secundaria',
+              'regulación terciaria', 'reposición de reservas',
+              'interrumpibilidad', 'servicio de interrumpibilidad',
+              'precio de la interrumpibilidad',
+              'recurso de balance', 'proveedor de servicios de balance',
+              'demand response', 'rted', 'rteda',
+          ]
+
+          # ALMACENAMIENTO COMO RECURSO DE FLEXIBILIDAD
+          kw_baterias = [
+              'almacenamiento energético', 'sistema de almacenamiento',
+              'baterías de almacenamiento', 'bess',
+              'almacenamiento por bombeo', 'bombeo hidráulico',
+              'hibridación', 'instalación híbrida de almacenamiento',
+              'acceso flexible', 'permisos de acceso flexible',
+              'patrones de funcionamiento de almacenamiento',
+          ]
+
+          # DISEÑO DE MERCADO Y REGULACIÓN DE CNMC/REE
+          # Normativa que cambia las reglas del juego en mercados eléctricos
+          kw_mercado = [
+              'diseño del mercado eléctrico', 'diseño de mercado',
+              'mercado mayorista de electricidad',
+              'procedimiento de operación', 'instrucción de operación',
+              'circular de la cnmc', 'resolución de la cnmc',
+              'acceso y conexión a las redes',
+              'código de red', 'reglamento de red',
+              'capacidad de acceso', 'capacidad de conexión',
+              'suministro de electricidad', 'comercialización de electricidad',
+              'sector eléctrico', 'ley del sector eléctrico',
+              'mercado ibérico', 'mibel',
+          ]
+
+          def clasificar_tema(texto):
+              if any(kw in texto for kw in kw_flexibilidad):
+                  return 'FLEXIBILIDAD'
+              if any(kw in texto for kw in kw_baterias):
+                  return 'BATERIAS'
+              if any(kw in texto for kw in kw_mercado):
+                  return 'MERCADO'
+              return None
+
+          # Excluir autorizaciones individuales de proyectos
+          keywords_excluir = [
+              'información pública', 'informacion publica',
+              'evaluación de impacto ambiental', 'evaluacion de impacto ambiental',
+              'concesión de aguas', 'servidumbre de paso',
+              'expropiación forzosa',
+              'autorización administrativa previa',
+              'autorización de construcción',
+              'declaración de impacto ambiental',
+              'estudio de impacto ambiental',
+          ]
+
+          feeds = [
+              ('https://www.boe.es/rss/boe.php?s=1', 'Seccion I - Disposiciones generales'),
+              ('https://www.boe.es/rss/boe.php?s=3', 'Seccion III - Otras disposiciones'),
+              ('https://www.boe.es/rss/boe.php?s=5', 'Seccion V - Anuncios'),
+          ]
+
+          items = []
+          errores = []
+
+          for url, seccion in feeds:
+              try:
+                  req = urllib.request.Request(url, headers={
+                      'User-Agent': 'Mozilla/5.0 (compatible; BOE-Monitor/1.0)'
+                  })
+                  with urllib.request.urlopen(req, timeout=30) as response:
+                      content = response.read()
+
+                  root = ET.fromstring(content)
+
+                  for item in root.findall('.//item'):
+                      title_el = item.find('title')
+                      link_el = item.find('link')
+                      pubdate_el = item.find('pubDate')
+                      desc_el = item.find('description')
+
+                      if title_el is None or link_el is None:
+                          continue
+
+                      titulo = (title_el.text or '').strip()
+                      link = (link_el.text or '').strip()
+                      descripcion = (desc_el.text or '').strip() if desc_el is not None else ''
+
+                      # Validar fecha
+                      fecha_pub = None
+                      if pubdate_el is not None and pubdate_el.text:
+                          try:
+                              fecha_pub = email.utils.parsedate_to_datetime(pubdate_el.text)
+                              fecha_pub = fecha_pub.replace(tzinfo=None)
+                          except Exception:
+                              pass
+
+                      if fecha_pub and fecha_pub < fecha_limite:
+                          continue
+
+                      texto = (titulo + ' ' + descripcion).lower()
+
+                      # Filtrar por keywords de exclusión primero
+                      if any(kw in texto for kw in keywords_excluir):
+                          continue
+
+                      # Clasificar por tema
+                      tema = clasificar_tema(texto)
+                      if tema is None:
+                          continue
+
+                      boe_id = link.split('id=')[-1] if 'id=BOE' in link else link
+
+                      items.append({
+                          'id': boe_id,
+                          'titulo': titulo,
+                          'link': link,
+                          'seccion': seccion,
+                          'tema': tema,
+                          'fecha_publicacion': fecha_pub.strftime('%Y-%m-%d') if fecha_pub else '',
+                          'descripcion': descripcion[:300]
+                      })
+
+              except Exception as e:
+                  errores.append({'feed': url, 'error': str(e)})
+
+          resultado = {
+              'generado': datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
+              'rango_inicio': fecha_limite.strftime('%Y-%m-%d'),
+              'rango_fin': datetime.utcnow().strftime('%Y-%m-%d'),
+              'total': len(items),
+              'errores': errores,
+              'items': items
+          }
+
+          import os
+          os.makedirs('datos', exist_ok=True)
+          with open('datos/boe-semana.json', 'w', encoding='utf-8') as f:
+              json.dump(resultado, f, ensure_ascii=False, indent=2)
+
+          print(f"OK: {len(items)} items relevantes. Errores: {len(errores)}")
+          if errores:
+              for e in errores:
+                  print(f"  ERROR: {e}")
+          EOF
+
+      - name: Commit y push
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "BOE Fetcher"
+          git add datos/boe-semana.json
+          git diff --staged --quiet || git commit -m "data: BOE $(date +%Y-%m-%d)"
+          git push origin main

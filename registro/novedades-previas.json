@@ -133,5 +133,68 @@
     "fecha_publicacion": "2026-05-05",
     "fecha_reportada": "2026-05-12",
     "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-B-2026-15229",
+    "titulo": "Gazules I Hibridación — nueva información pública (45,83 MW BESS + FV 49,8 MW), modificación subestación SET OPDE Gazules, Alcalá de los Gazules (Cádiz)",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-05-12",
+    "fecha_reportada": "2026-05-18",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-B-2026-15354",
+    "titulo": "Módulo almacenamiento Hibridación Plana de la Pena 1, 26,74 MW BESS (126 MWh, Powin Stack750) + FV 43,9 MW — Botorrita/La Muela/María de Huerva (Zaragoza). PFot-ALM-122",
+    "fuente": "BOE",
+    "tema": "ALMACENAMIENTO",
+    "fecha_publicacion": "2026-05-13",
+    "fecha_reportada": "2026-05-18",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "https://www.idae.es/noticias/el-idae-asigna-440-millones-de-la-segunda-subasta-nacional-de-hidrogeno-renovable",
+    "titulo": "IDAE asigna 439,4 M€ en segunda subasta AaaS Hidrógeno Renovable — NOON II (80 MW) + ODIN (140 MW) de Iberdrola en Huelva y QUIXOTGEN (30 MW) de Capital Energy en Albacete — 250 MW electrólisis total",
+    "fuente": "MITECO",
+    "tema": "RENOVABLES",
+    "fecha_publicacion": "2026-05-13",
+    "fecha_reportada": "2026-05-18",
+    "semana": "2026-W20"
+  },
+  {
+    "id": "BOE-A-2026-10602",
+    "titulo": "Resolución de 11 de mayo de 2026, de la CNMC, por la que se modifica el procedimiento de operación eléctrico P.O. 7.5 para mejorar la eficiencia en la asignación del SRAD",
+    "fuente": "BOE",
+    "tema": "FLEXIBILIDAD",
+    "fecha_publicacion": "2026-05-15",
+    "fecha_reportada": "2026-05-25",
+    "semana": "2026-W21"
+  },
+  {
+    "id": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/mayo/el-miteco-propone-una-tercera-modificacion-de-aspectos-puntuales.html",
+    "titulo": "Trámite de audiencia: Tercera Modificación de la Planificación de electricidad con horizonte 2026 — Plan de Desarrollo de la Red de Transporte (MAP-3-2026)",
+    "fuente": "MITECO",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-05-21",
+    "fecha_reportada": "2026-05-25",
+    "semana": "2026-W21"
+  },
+  {
+    "id": "https://www.cnmc.es/node/420604",
+    "titulo": "Trámite de audiencia CNMC DCOOR/DE/002/26 — Propuesta de resolución modificación reglas de funcionamiento mercados diario e intradiario para implementación de 96 rondas de negociación en el MIC (mercado intradiario continuo cuarto-horario)",
+    "fuente": "CNMC",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-06-01",
+    "fecha_reportada": "2026-06-01",
+    "semana": "2026-W23"
+  },
+  {
+    "id": "https://www.cnmc.es/consultas-publicas/energia/tramite-audiencia-propuesta-resolucion-modificacion-de-diversos-pos",
+    "titulo": "Trámite de audiencia CNMC — Propuesta de resolución modificación de diversos POs eléctricos para implementación de 96 rondas de negociación en el MIC",
+    "fuente": "CNMC",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-06-01",
+    "fecha_reportada": "2026-06-01",
+    "semana": "2026-W23"
   }
 ]

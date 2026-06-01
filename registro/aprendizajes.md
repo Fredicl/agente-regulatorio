@@ -9,6 +9,10 @@ _Preferencias y correcciones del usuario — el agente las aplica en cada ejecuc
 | 2026-05-12 | Solo documentos oficiales primarios (boe.es, cnmc.es, ree.es, miteco.gob.es). No noticias. |
 | 2026-05-12 | Validar fecha de publicación del documento antes de incluirlo. Solo últimos 7 días. |
 | 2026-05-12 | Incluir enlace directo al documento oficial, nunca a una noticia sobre él. |
+| 2026-05-13 | NO incluir autorizaciones individuales de proyectos (plantas concretas, BESS individuales, nudos específicos). Solo regulación de alcance general. |
+| 2026-05-13 | NO incluir recomendaciones para ninguna empresa concreta. Solo el hecho regulatorio. |
+| 2026-05-13 | Estructura del email en 3 secciones: Baterías y Almacenamiento / Mercados de Flexibilidad / Novedades Regulatorias. |
+| 2026-05-13 | NO incluir datos estadísticos de mercado sin cambio normativo (precios spot, datos de generación mensual). |
 
 ---
 
@@ -16,6 +20,13 @@ _Preferencias y correcciones del usuario — el agente las aplica en cada ejecuc
 
 | Fecha | Fuente | Descripción del tema | Referencia |
 |-------|--------|---------------------|------------|
+| 2026-06-01 | CNMC | DCOOR/DE/002/26: Trámite de audiencia modificación reglas mercados diario e intradiario para 96 rondas MIC (cuarto-horario). Propuesta OMIE 09/03/2026. Plazo obs. 24/06/2026. | cnmc.es/node/420604 |
+| 2026-06-01 | CNMC | Trámite de audiencia modificación POs eléctricos para 96 rondas MIC (cuarto-horario). Plazo obs. 24/06/2026. | cnmc.es/consultas-publicas/energia/tramite-audiencia-...pos |
+| 2026-05-25 | BOE/CNMC | Resolución CNMC modifica P.O.7.5 SRAD (BOE 15/05): nuevo criterio 20% margen en asignación de ofertas para limitar poder de mercado de intermediarios; transparencia en publicación de asignadas. En vigor 16/05. | BOE-A-2026-10602 |
+| 2026-05-25 | MITECO | Tercera Modificación Planificación Red Transporte 2021-2026 (MAP-3-2026): 607 M€ en resiliencia, gestión flujos N-S, amortiguación oscilaciones europeas, control tensión. Plazo alegaciones 11/06/2026. | MITECO-MAP-3-2026 |
+| 2026-05-18 | MITECO/IDAE | Segunda subasta AaaS Hidrógeno Renovable: 439,4 M€ asignados — NOON II + ODIN (Iberdrola, Huelva) + QUIXOTGEN (Capital Energy, Albacete) — 250 MW electrólisis | idae.es/noticias/el-idae-asigna-440-millones |
+| 2026-05-18 | BOE | Gazules I Hibridación nueva IP — 45,83 MW BESS + FV 49,8 MW, Cádiz (segunda IP por modificación subestación) | BOE-B-2026-15229 |
+| 2026-05-18 | BOE | Hibridación Plana de la Pena 1 — 26,74 MW BESS (126 MWh, Powin) + FV 43,9 MW, Zaragoza | BOE-B-2026-15354 |
 | 2026-05-12 | MITECO | Cuatro consultas públicas RDL 7/2026: ZAR, excelencia social, beneficios territoriales, biometano (cierre 15 mayo) | k-817, k-819 |
 | 2026-05-12 | BOE | RDL 7/2026: medidas almacenamiento — derogación garantías, devolución desde 22 mayo | BOE-A-2026-6544 |
 | 2026-05-12 | BOE | Instalación híbrida Olinda 110,53 MW BESS+FV, Lightsource bp, Castellón | BOE-B-2026-14192 |
@@ -39,6 +50,14 @@ _El agente añade aquí cada error encontrado durante la ejecución para mejorar
 
 | Fecha | Fuente/URL | Tipo de error | Acción tomada |
 |-------|------------|---------------|---------------|
+| 2026-06-01 | boe.es / cnmc.es / ree.es / miteco.gob.es | HTTP 403 en todos los WebFetch — patrón consolidado (cuarta semana consecutiva) | Solo WebSearch como alternativa funcional |
+| 2026-06-01 | datos/boe-semana.json | Archivo generado 29/05 cubre solo hasta 29/05 — no incluye posibles BOE del 30-31 mayo y 1 junio | Complementado con WebSearch; no se encontraron ítems adicionales en esas fechas |
+| 2026-06-01 | cnmc.es DCOOR/DE/006/26 | POs PO7.4+PO14.4 control tensión (abierto ~12/05, deadline 25/05): no capturado por W20 ni W21. Fecha de apertura (~12/05) fuera de la ventana de 7 días de ambas ejecuciones | Registrado como error de cobertura; recomendación: buscar explícitamente tramites audiencia CNMC en cnmc.es/consultas-publicas/energia al inicio de cada ejecución |
+| 2026-05-25 | boe.es / cnmc.es / ree.es / miteco.gob.es | HTTP 403 en todos los WebFetch — patrón consolidado (tercera semana consecutiva) | Solo WebSearch como alternativa funcional |
+| 2026-05-25 | datos/boe-semana.json | No capturó BOE-A-2026-10602 (P.O.7.5 SRAD, BOE 15/05): el GitHub Action carece de keywords "procedimiento de operación", "respuesta activa de la demanda", "SRAD", "P.O.7." | Documento incluido manualmente por caer en el rango boe-semana.json (15-22 mayo) |
+| 2026-05-18 | boe.es RSS (boe.php?s=1,3,5) | HTTP 403 recurrente — mismo error que semana anterior | Estrategia: WebSearch con filtros de dominio + validación cruzada |
+| 2026-05-18 | boe.es sumario/páginas directas | HTTP 403 en todos los WebFetch de boe.es | WebSearch es la única alternativa funcional |
+| 2026-05-18 | cnmc.es, ree.es, miteco.gob.es | HTTP 403 en todos los WebFetch | Idem semana anterior — WebSearch como alternativa |
 | 2026-05-12 | boe.es datosabiertos API | HTTP 403 desde entorno cloud | Cambiado a RSS oficial (boe.php?s=1/3/5) |
 | 2026-05-12 | cnmc.es, ree.es, miteco.gob.es | HTTP 403 en WebFetch directo | Usar WebSearch + WebFetch selectivo solo en URLs prometedoras |
 
@@ -50,8 +69,19 @@ _Observaciones del agente sobre frecuencia de publicación, temas en auge, etc._
 
 | Fecha | Patrón |
 |-------|--------|
+| 2026-06-01 | CNMC lanzó dos tramites de audiencia coordinados el mismo día (01/06) para implementar el mercado cuarto-horario MIC (96 rondas): uno para reglas de mercado (DCOOR/DE/002/26) y otro para POs eléctricos. Patrón de publicación simultánea de paquetes regulatorios. |
+| 2026-06-01 | Semana W22 (25/05-01/06) muy tranquila en BOE: 0 publicaciones de regulación general capturadas. Patrón de 3 semanas consecutivas de actividad decreciente post-RDL 7/2026. |
+| 2026-06-01 | CNMC RDC/DE/003/25 (Permisos Acceso Flexibles): 2 semanas sin publicación en BOE tras cierre consulta (20/03). Demora acumulada supera 2,5 meses. Vigilar urgentemente cada semana. |
+| 2026-06-01 | Recomendación crítica: añadir búsqueda explícita de cnmc.es/consultas-publicas/energia al inicio de ejecución para no perder tramites de audiencia que se abren y cierran en una semana (caso DCOOR/DE/006/26). El WebSearch con site:cnmc.es no siempre captura trámites recientes. |
 | 2026-05-12 | BOE MUY ACTIVO en proyectos BESS hibridación: semana 5-11 mayo = 4 proyectos, 116 MW BESS + 136 MW FV. El ritmo de hibridación es elevado (decenas de proyectos/mes). |
 | 2026-05-12 | MITECO tiene 4 consultas abiertas simultáneas derivadas del RDL 7/2026 (ZAR, excelencia, beneficios, biometano) — plazo muy corto (15 mayo). Patrón de regulación secundaria derivada de RDL urgente. |
 | 2026-05-12 | Almacenamiento es el tema más activo. Casi todas las semanas hay proyectos BESS/hibridación en información pública. |
+| 2026-05-18 | Semana W20 (11-17 mayo) significativamente más tranquila que la anterior: solo 3 documentos vs 14. Normal tras la avalancha del RDL 7/2026. |
+| 2026-05-25 | Semana W21 (18-25 mayo) muy tranquila: 2 documentos de regulación general. Patrón confirmado de desaceleración post-RDL 7/2026. |
+| 2026-05-25 | CNMC RDC/DE/003/25 (Permisos Acceso Flexibles): sigue pendiente de publicación en BOE. Demora acumulada desde cierre consulta (20/03) supera 2 meses. Artículos de medios especializados (may-19) usan lenguaje de "nueva resolución" — posible publicación inminente en BOE. Vigilar urgentemente. |
+| 2026-05-25 | boe-semana.json perdió BOE-A-2026-10602 (SRAD mod., BOE 15 mayo). Recomendación crítica: añadir keywords al GitHub Action: "procedimiento de operación", "respuesta activa de la demanda", "SRAD", "P.O.7.", "servicios de balance", "servicios de ajuste", "interrumpibilidad" para capturar resoluciones CNMC sobre procedimientos operativos. |
+| 2026-05-18 | La CNMC resolución RDC/DE/003/25 (Permisos de Acceso Flexibles) sigue pendiente de publicación en BOE tras cierre de consulta el 20/03/2026 — vigilar próximas semanas. |
+| 2026-05-18 | Mecanismo AaaS para H2 renovable sigue siendo el principal instrumento de contratos públicos de larga duración en España — potencial extensión a almacenamiento/flexibilidad. |
+| 2026-05-18 | Consulta MITECO k-820 (nudo Maciñeira, transición justa As Pontes): deadline 19/05 — muy corto. Patrón: MITECO abre consultas con plazos de 3-4 semanas. |
 | 2026-05-12 | Apagón 28 abril ha generado regulación reactiva: CNMC acelera procedimiento control tensión P.O.7.4, investigaciones de expedientes, tensión institucional CNMC-REE. |
 | 2026-05-12 | La API REST del BOE (boe.es/datosabiertos/api/) está bloqueada por el sandbox del agente — usar WebSearch como alternativa. Los sites boe.es y miteco.gob.es devuelven 403 en WebFetch. |

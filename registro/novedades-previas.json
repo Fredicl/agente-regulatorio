@@ -178,5 +178,23 @@
     "fecha_publicacion": "2026-05-21",
     "fecha_reportada": "2026-05-25",
     "semana": "2026-W21"
+  },
+  {
+    "id": "https://www.cnmc.es/node/420604",
+    "titulo": "Trámite de audiencia CNMC DCOOR/DE/002/26 — Propuesta de resolución modificación reglas de funcionamiento mercados diario e intradiario para implementación de 96 rondas de negociación en el MIC (mercado intradiario continuo cuarto-horario)",
+    "fuente": "CNMC",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-06-01",
+    "fecha_reportada": "2026-06-01",
+    "semana": "2026-W23"
+  },
+  {
+    "id": "https://www.cnmc.es/consultas-publicas/energia/tramite-audiencia-propuesta-resolucion-modificacion-de-diversos-pos",
+    "titulo": "Trámite de audiencia CNMC — Propuesta de resolución modificación de diversos POs eléctricos para implementación de 96 rondas de negociación en el MIC",
+    "fuente": "CNMC",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-06-01",
+    "fecha_reportada": "2026-06-01",
+    "semana": "2026-W23"
   }
 ]

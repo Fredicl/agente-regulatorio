@@ -1,8 +1,18 @@
 {
-  "generado": "2026-06-01T12:45:04Z",
-  "rango_inicio": "2026-05-25",
-  "rango_fin": "2026-06-01",
-  "total": 0,
+  "generado": "2026-06-02T11:23:53Z",
+  "rango_inicio": "2026-05-26",
+  "rango_fin": "2026-06-02",
+  "total": 1,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-A-2026-11838",
+      "titulo": "Resolución de 11 de mayo de 2026, de la Dirección General de Calidad y Evaluación Ambiental, por la que se formula informe de impacto ambiental del proyecto «Módulo de almacenamiento de energía \"Armus\", de 20 MW de potencia instalada, y su infraestructura de evacuación, para su hibridación con la instalación híbrida \"Armus solar\", de 35 MW eólico y 49,88 MW fotovoltaico, provincia de Palencia».",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11838",
+      "seccion": "Seccion III - Otras disposiciones",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-06-02",
+      "descripcion": "III. Otras disposiciones - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Impacto ambiental - Referencia: BOE-A-2026-11838 - KBytes: 1526 - Páginas: 15"
+    }
+  ]
 }

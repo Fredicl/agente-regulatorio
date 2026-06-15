@@ -1,8 +1,21 @@
 {
-  "generado": "2026-06-12T11:06:19Z",
-  "rango_inicio": "2026-06-05",
-  "rango_fin": "2026-06-12",
+  "generado": "2026-06-15T13:24:24Z",
+  "rango_inicio": "2026-06-08",
+  "rango_fin": "2026-06-15",
   "total": 0,
-  "errores": [],
+  "errores": [
+    {
+      "feed": "https://www.boe.es/rss/boe.php?s=1",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "feed": "https://www.boe.es/rss/boe.php?s=3",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "feed": "https://www.boe.es/rss/boe.php?s=5",
+      "error": "<urlopen error timed out>"
+    }
+  ],
   "items": []
 }

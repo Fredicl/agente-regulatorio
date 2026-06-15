@@ -20,6 +20,7 @@ _Preferencias y correcciones del usuario — el agente las aplica en cada ejecuc
 
 | Fecha | Fuente | Descripción del tema | Referencia |
 |-------|--------|---------------------|------------|
+| 2026-06-15 | CNMC | CNS/DE/447/26: CNMC reitera obligaciones contractuales comercializadoras eléctricas bajo RD 88/2026 (llamadas no solicitadas, consentimiento, verificación identidad). | cnmc.es/prensa/consulta-obligaciones-electricidad-20260610 |
 | 2026-06-08 | — | Sin novedades regulatorias semana W24 (02-08 jun 2026): 0 documentos nuevos en BOE, CNMC, REE, MITECO. Deadlines activos: MAP-3-2026 (11/06), MIC 96 rondas (24/06). | — |
 | 2026-06-01 | CNMC | DCOOR/DE/002/26: Trámite de audiencia modificación reglas mercados diario e intradiario para 96 rondas MIC (cuarto-horario). Propuesta OMIE 09/03/2026. Plazo obs. 24/06/2026. | cnmc.es/node/420604 |
 | 2026-06-01 | CNMC | Trámite de audiencia modificación POs eléctricos para 96 rondas MIC (cuarto-horario). Plazo obs. 24/06/2026. | cnmc.es/consultas-publicas/energia/tramite-audiencia-...pos |
@@ -52,6 +53,9 @@ _El agente añade aquí cada error encontrado durante la ejecución para mejorar
 | Fecha | Fuente/URL | Tipo de error | Acción tomada |
 |-------|------------|---------------|---------------|
 | 2026-06-08 | datos/boe-semana.json | Archivo generado 05/06 (3 días antigüedad), cubre hasta 05/06 — sin cobertura BOE 06-08 junio; 0 ítems en rango 29/05-05/06 | Complementado con WebSearch; confirmado 0 publicaciones BOE relevantes en la semana |
+| 2026-06-15 | boe.es / cnmc.es / ree.es / miteco.gob.es | HTTP 403 en todos los WebFetch — sexta semana consecutiva (patrón consolidado) | Solo WebSearch como alternativa funcional |
+| 2026-06-15 | REE nota prensa SRAD H2 2026 (29/05/2026) | 1.775 MW SRAD H2 2026 no capturado en W23 (25/05-01/06) ni W24 (02-08/06): cayó entre ventanas; fuera de ventana W25 | Documentado como brecha de cobertura; recomendación: buscar explícitamente resultados subasta SRAD al cambio de semestre (mayo/nov) |
+| 2026-06-15 | datos/boe-semana.json | Generado 12/06 (3 días antigüedad), cubre 05-12 junio; sin cobertura 13-15 junio; 0 ítems relevantes en el rango | Complementado con WebSearch; 0 publicaciones BOE relevantes en la semana |
 | 2026-06-08 | boe.es / cnmc.es / ree.es / miteco.gob.es | HTTP 403 en todos los WebFetch — quinta semana consecutiva (patrón consolidado) | Solo WebSearch como alternativa funcional |
 | 2026-06-01 | boe.es / cnmc.es / ree.es / miteco.gob.es | HTTP 403 en todos los WebFetch — patrón consolidado (cuarta semana consecutiva) | Solo WebSearch como alternativa funcional |
 | 2026-06-01 | datos/boe-semana.json | Archivo generado 29/05 cubre solo hasta 29/05 — no incluye posibles BOE del 30-31 mayo y 1 junio | Complementado con WebSearch; no se encontraron ítems adicionales en esas fechas |
@@ -72,6 +76,7 @@ _Observaciones del agente sobre frecuencia de publicación, temas en auge, etc._
 
 | Fecha | Patrón |
 |-------|--------|
+| 2026-06-15 | W25 run (08-14 jun): semana de baja actividad — 1 documento marginal (CNS/DE/447/26, interpretación comercialización RD 88/2026). CNMC RDC/DE/003/25 acumula >13 semanas sin publicación BOE desde cierre consulta (20/03/2026). Plazo MIC 96 rondas vence 24/06 — esperar paquete regulatorio post-deadline. MAP-3-2026 cerró alegaciones 11/06 sin respuesta normativa visible esta semana. |
 | 2026-06-08 | W24 (02-08 jun): segunda semana consecutiva con 0 documentos regulatorios nuevos. CNMC RDC/DE/003/25 (Permisos Acceso Flexibles) acumula >11 semanas pendiente de publicación en BOE desde cierre de consulta (20/03/2026) — demora inusualmente larga. Plazo alegaciones MAP-3-2026 vence 11/06 (este jueves): potencial actividad regulatoria inmediata. |
 | 2026-06-01 | CNMC lanzó dos tramites de audiencia coordinados el mismo día (01/06) para implementar el mercado cuarto-horario MIC (96 rondas): uno para reglas de mercado (DCOOR/DE/002/26) y otro para POs eléctricos. Patrón de publicación simultánea de paquetes regulatorios. |
 | 2026-06-01 | Semana W22 (25/05-01/06) muy tranquila en BOE: 0 publicaciones de regulación general capturadas. Patrón de 3 semanas consecutivas de actividad decreciente post-RDL 7/2026. |

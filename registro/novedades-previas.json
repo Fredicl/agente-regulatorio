@@ -196,5 +196,14 @@
     "fecha_publicacion": "2026-06-01",
     "fecha_reportada": "2026-06-01",
     "semana": "2026-W23"
+  },
+  {
+    "id": "https://www.cnmc.es/prensa/consulta-obligaciones-electricidad-20260610",
+    "titulo": "La CNMC reitera a las comercializadoras eléctricas sus obligaciones contractuales — CNS/DE/447/26 (interpretación RD 88/2026)",
+    "fuente": "CNMC",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-06-10",
+    "fecha_reportada": "2026-06-15",
+    "semana": "2026-W24"
   }
 ]

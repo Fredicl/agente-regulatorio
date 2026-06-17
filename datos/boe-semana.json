@@ -1,21 +1,18 @@
 {
-  "generado": "2026-06-16T12:19:24Z",
-  "rango_inicio": "2026-06-09",
-  "rango_fin": "2026-06-16",
-  "total": 0,
-  "errores": [
+  "generado": "2026-06-17T11:55:33Z",
+  "rango_inicio": "2026-06-10",
+  "rango_fin": "2026-06-17",
+  "total": 1,
+  "errores": [],
+  "items": [
     {
-      "feed": "https://www.boe.es/rss/boe.php?s=1",
-      "error": "<urlopen error timed out>"
-    },
-    {
-      "feed": "https://www.boe.es/rss/boe.php?s=3",
-      "error": "<urlopen error timed out>"
-    },
-    {
-      "feed": "https://www.boe.es/rss/boe.php?s=5",
-      "error": "<urlopen error timed out>"
+      "id": "BOE-B-2026-20597",
+      "titulo": "Anuncio de la Subdirección General de Energía Eléctrica por el que se da publicidad a la Resolución de 5 de junio de 2026 de la Secretaría de Estado de Energía por la que se acuerda la celebración de concurso de capacidad de acceso en determinados nudos de la red de transporte.",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-20597",
+      "seccion": "Seccion V - Anuncios",
+      "tema": "MERCADO",
+      "fecha_publicacion": "2026-06-17",
+      "descripcion": "V. Anuncios. - B. Otros anuncios oficiales - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Referencia: BOE-B-2026-20597 - KBytes: 197 - Páginas: 1"
     }
-  ],
-  "items": []
+  ]
 }

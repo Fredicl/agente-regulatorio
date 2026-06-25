@@ -1,8 +1,18 @@
 {
-  "generado": "2026-06-24T10:26:12Z",
-  "rango_inicio": "2026-06-17",
-  "rango_fin": "2026-06-24",
-  "total": 0,
+  "generado": "2026-06-25T10:18:08Z",
+  "rango_inicio": "2026-06-18",
+  "rango_fin": "2026-06-25",
+  "total": 1,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-A-2026-13759",
+      "titulo": "Orden TED/634/2026, de 17 de junio, por la se aprueba el reparto de las cantidades a financiar relativas al bono social y al coste del suministro de electricidad de los consumidores a los que hacen referencia los artículos 52.4.j) y 52.4.k) de la Ley 24/2013, de 26 de diciembre, del sector eléctrico, correspondiente al año 2026.",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-13759",
+      "seccion": "Seccion I - Disposiciones generales",
+      "tema": "MERCADO",
+      "fecha_publicacion": "2026-06-25",
+      "descripcion": "I. Disposiciones generales - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Energía eléctrica - Referencia: BOE-A-2026-13759 - KBytes: 211 - Páginas: 5"
+    }
+  ]
 }

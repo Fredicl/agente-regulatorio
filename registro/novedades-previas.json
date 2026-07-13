@@ -214,5 +214,23 @@
     "fecha_publicacion": "2026-06-19",
     "fecha_reportada": "2026-06-22",
     "semana": "2026-W26"
+  },
+  {
+    "id": "BOE-A-2026-15127",
+    "titulo": "Resolución de 30 de junio de 2026, de la CNMC, por la que se modifican los procedimientos de operación eléctricos 7.4 y 14.4 para fomentar la prestación dinámica del servicio de control de tensión",
+    "fuente": "BOE",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-07-10",
+    "fecha_reportada": "2026-07-13",
+    "semana": "2026-W29"
+  },
+  {
+    "id": "https://www.cnmc.es/consultas-publicas/energia/permisos-de-acceso-flexibles-red-transporte-red-distribucion",
+    "titulo": "CNMC — Nueva propuesta resolución RDC/DE/003/25: permisos de acceso flexibles de la demanda a la red de transporte y a las redes de distribución (plazo obs. 17/07/2026)",
+    "fuente": "CNMC",
+    "tema": "FLEXIBILIDAD",
+    "fecha_publicacion": "2026-07-07",
+    "fecha_reportada": "2026-07-13",
+    "semana": "2026-W29"
   }
 ]

@@ -1,8 +1,18 @@
 {
-  "generado": "2026-07-17T09:15:27Z",
-  "rango_inicio": "2026-07-10",
-  "rango_fin": "2026-07-17",
-  "total": 0,
+  "generado": "2026-07-20T10:18:14Z",
+  "rango_inicio": "2026-07-13",
+  "rango_fin": "2026-07-20",
+  "total": 1,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-B-2026-24635",
+      "titulo": "Anuncio de formalización de contratos de: Dirección del Centro Penitenciario de Topas (Salamanca). Objeto: Servicio de recogida de basuras y traslado a vertedero autorizado. Expediente: 52002026RB01.",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-24635",
+      "seccion": "Seccion V - Anuncios",
+      "tema": "FLEXIBILIDAD",
+      "fecha_publicacion": "2026-07-20",
+      "descripcion": "V. Anuncios. - A. Contratación del Sector Público - MINISTERIO DEL INTERIOR - Referencia: BOE-B-2026-24635 - KBytes: 212 - Páginas: 2"
+    }
+  ]
 }

@@ -1,18 +1,8 @@
 {
-  "generado": "2026-07-29T09:44:05Z",
-  "rango_inicio": "2026-07-22",
-  "rango_fin": "2026-07-29",
-  "total": 1,
+  "generado": "2026-07-30T09:34:46Z",
+  "rango_inicio": "2026-07-23",
+  "rango_fin": "2026-07-30",
+  "total": 0,
   "errores": [],
-  "items": [
-    {
-      "id": "BOE-A-2026-16530",
-      "titulo": "Resolución de 10 de julio de 2026, de la Secretaría de Estado de Energía, por la que se resuelve el concurso público para la concesión de capacidad de acceso de evacuación a la red de energía eléctrica de instalaciones de generación de electricidad de procedencia renovable en el nudo de transición justa Narcea 400 kV.",
-      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16530",
-      "seccion": "Seccion III - Otras disposiciones",
-      "tema": "MERCADO",
-      "fecha_publicacion": "2026-07-29",
-      "descripcion": "III. Otras disposiciones - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Energía eléctrica - Referencia: BOE-A-2026-16530 - KBytes: 297 - Páginas: 9"
-    }
-  ]
+  "items": []
 }

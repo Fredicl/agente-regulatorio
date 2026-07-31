@@ -1,8 +1,18 @@
 {
-  "generado": "2026-07-30T09:34:46Z",
-  "rango_inicio": "2026-07-23",
-  "rango_fin": "2026-07-30",
-  "total": 0,
+  "generado": "2026-07-31T09:49:51Z",
+  "rango_inicio": "2026-07-24",
+  "rango_fin": "2026-07-31",
+  "total": 1,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-A-2026-16732",
+      "titulo": "Resolución de 15 de julio de 2026, de la Dirección General de Calidad y Evaluación Ambiental, por la que se formula informe de impacto ambiental del proyecto «Módulo de generación fotovoltaica PSFV Alíjar, para su hibridación con el Parque Eólico existente PE Alíjar II, y para su infraestructura de evacuación, en la provincia de Cádiz».",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16732",
+      "seccion": "Seccion III - Otras disposiciones",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-07-31",
+      "descripcion": "III. Otras disposiciones - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Impacto ambiental - Referencia: BOE-A-2026-16732 - KBytes: 2381 - Páginas: 18"
+    }
+  ]
 }

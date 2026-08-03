@@ -241,5 +241,23 @@
     "fecha_publicacion": "2026-07-27",
     "fecha_reportada": "2026-07-27",
     "semana": "2026-W31"
+  },
+  {
+    "id": "BOE-A-2026-16661",
+    "titulo": "Real Decreto 640/2026, de 29 de julio, por el que se regulan los planes de inversión de las redes de transporte y distribución de energía eléctrica",
+    "fuente": "BOE",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-07-31",
+    "fecha_reportada": "2026-08-03",
+    "semana": "2026-W32"
+  },
+  {
+    "id": "BOE-A-2026-16662",
+    "titulo": "Real Decreto 641/2026, de 29 de julio — modificación RD 1125/2021 y RD 534/2025 sobre subvenciones PRTR para digitalización redes distribución (762 M€) e infraestructura transporte descarbonización; Componente 8 incluye despliegue flexibilidad, almacenamiento y agregador independiente",
+    "fuente": "BOE",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-07-31",
+    "fecha_reportada": "2026-08-03",
+    "semana": "2026-W32"
   }
 ]

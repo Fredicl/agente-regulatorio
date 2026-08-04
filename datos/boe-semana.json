@@ -1,27 +1,21 @@
 {
-  "generado": "2026-08-03T10:49:42Z",
-  "rango_inicio": "2026-07-27",
-  "rango_fin": "2026-08-03",
-  "total": 2,
-  "errores": [],
-  "items": [
+  "generado": "2026-08-04T09:45:02Z",
+  "rango_inicio": "2026-07-28",
+  "rango_fin": "2026-08-04",
+  "total": 0,
+  "errores": [
     {
-      "id": "BOE-A-2026-16925",
-      "titulo": "Resolución de 22 de julio de 2026, de la Comisión Nacional de los Mercados y la Competencia, por la que se establecen los criterios para la liquidación por el operador del sistema de los días 28 y 29 de abril de 2025.",
-      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16925",
-      "seccion": "Seccion III - Otras disposiciones",
-      "tema": "MERCADO",
-      "fecha_publicacion": "2026-08-03",
-      "descripcion": "III. Otras disposiciones - COMISIÓN NACIONAL DE LOS MERCADOS Y LA COMPETENCIA - Sector eléctrico - Referencia: BOE-A-2026-16925 - KBytes: 341 - Páginas: 16"
+      "feed": "https://www.boe.es/rss/boe.php?s=1",
+      "error": "<urlopen error timed out>"
     },
     {
-      "id": "BOE-B-2026-25892",
-      "titulo": "Anuncio de formalización de contratos de: Jefatura de la Sección Económico Administrativa 23 de la Base Aérea de Albacete. Objeto: Suministro e instalación de un sistema de almacenamiento vertical motorizado para neumáticos C16 y UD13/UD14 en la Maestranza Aérea de Albacete. Expediente: 2026/EA23/00000849E.",
-      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-25892",
-      "seccion": "Seccion V - Anuncios",
-      "tema": "BATERIAS",
-      "fecha_publicacion": "2026-08-03",
-      "descripcion": "V. Anuncios. - A. Contratación del Sector Público - MINISTERIO DE DEFENSA - Referencia: BOE-B-2026-25892 - KBytes: 209 - Páginas: 2"
+      "feed": "https://www.boe.es/rss/boe.php?s=3",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "feed": "https://www.boe.es/rss/boe.php?s=5",
+      "error": "<urlopen error timed out>"
     }
-  ]
+  ],
+  "items": []
 }

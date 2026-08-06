@@ -1,8 +1,36 @@
 {
-  "generado": "2026-08-05T09:42:09Z",
-  "rango_inicio": "2026-07-29",
-  "rango_fin": "2026-08-05",
-  "total": 0,
+  "generado": "2026-08-06T09:45:02Z",
+  "rango_inicio": "2026-07-30",
+  "rango_fin": "2026-08-06",
+  "total": 3,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-A-2026-17172",
+      "titulo": "Resolución de 8 de julio de 2026, de la Dirección General de Política Energética y Minas, por la que se desestima la solicitud de Biovent Energía, SA, de autorización administrativa de construcción y declaración, en concreto, de utilidad pública del módulo de generación fotovoltaica Tarayuela, de 30 MW de potencia instalada, y sus infraestructuras para evacuación de energía eléctrica, para su hibridación con el parque eólico existente Tarayuela, de 30 MW de potencia instalada, en Alentisque, Momblona y Morón de Almazán (Soria).",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17172",
+      "seccion": "Seccion III - Otras disposiciones",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-08-06",
+      "descripcion": "III. Otras disposiciones - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Instalaciones eléctricas - Referencia: BOE-A-2026-17172 - KBytes: 231 - Páginas: 8"
+    },
+    {
+      "id": "BOE-A-2026-17173",
+      "titulo": "Resolución de 8 de julio de 2026, de la Dirección General de Política Energética y Minas, por la que se desestima la solicitud de Biovent Energía, SA, de autorización administrativa de construcción y declaración, en concreto, de utilidad pública del módulo fotovoltaico «FV Hontalbilla II», de 28,5 MW de potencia instalada, y su infraestructura de evacuación, para su hibridación con el parque eólico existente Hontalbilla II, en Adradas, Baraona y Villasayas (Soria).",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17173",
+      "seccion": "Seccion III - Otras disposiciones",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-08-06",
+      "descripcion": "III. Otras disposiciones - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Instalaciones eléctricas - Referencia: BOE-A-2026-17173 - KBytes: 229 - Páginas: 8"
+    },
+    {
+      "id": "BOE-A-2026-17174",
+      "titulo": "Resolución de 8 de julio de 2026, de la Dirección General de Política Energética y Minas, por la que se desestima la solicitud de Iberdrola Renovables Castilla y León, SA, de autorización administrativa de construcción y declaración, en concreto, de utilidad pública del módulo de generación fotovoltaica Radona II, de 32,655 MW de potencia instalada, y sus infraestructuras para evacuación de energía eléctrica, para su hibridación con el parque eólico existente Radona II, de 32 MW de potencia instalada, en Taroda y Alcubilla de las Peñas (Soria).",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17174",
+      "seccion": "Seccion III - Otras disposiciones",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-08-06",
+      "descripcion": "III. Otras disposiciones - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Instalaciones eléctricas - Referencia: BOE-A-2026-17174 - KBytes: 238 - Páginas: 9"
+    }
+  ]
 }

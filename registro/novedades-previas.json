@@ -259,5 +259,23 @@
     "fecha_publicacion": "2026-07-31",
     "fecha_reportada": "2026-08-03",
     "semana": "2026-W32"
+  },
+  {
+    "id": "BOE-A-2026-17285",
+    "titulo": "Resolución de 30 de julio de 2026, de la Comisión Nacional de los Mercados y la Competencia, por la que se modifican procedimientos de operación del sistema eléctrico, para la implementación de 96 rondas de negociación en el mercado intradiario continuo.",
+    "fuente": "BOE/CNMC",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-08-07",
+    "fecha_reportada": "2026-08-10",
+    "semana": "2026-W33"
+  },
+  {
+    "id": "BOE-A-2026-17368",
+    "titulo": "Resolución de 3 de agosto de 2026, de la Secretaría de Estado de Energía, por la que se publica el Acuerdo de Consejo de Ministros de 28 de julio de 2026, por el que se aprueba la tercera modificación de aspectos puntuales del Plan de desarrollo de la Red de Transporte de Energía Eléctrica 2021-2026.",
+    "fuente": "BOE/MITECO",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-08-03",
+    "fecha_reportada": "2026-08-10",
+    "semana": "2026-W33"
   }
 ]

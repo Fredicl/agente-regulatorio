@@ -1,8 +1,18 @@
 {
-  "generado": "2026-08-10T08:45:16Z",
-  "rango_inicio": "2026-08-03",
-  "rango_fin": "2026-08-10",
-  "total": 0,
+  "generado": "2026-08-11T08:12:30Z",
+  "rango_inicio": "2026-08-04",
+  "rango_fin": "2026-08-11",
+  "total": 1,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-A-2026-17571",
+      "titulo": "Resolución de 31 de julio de 2026, de la Comisión Nacional de los Mercados y la Competencia, por la que se establecen los permisos de acceso flexibles de la demanda de energía eléctrica a la red de transporte y a las redes de distribución.",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17571",
+      "seccion": "Seccion III - Otras disposiciones",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-08-11",
+      "descripcion": "III. Otras disposiciones - COMISIÓN NACIONAL DE LOS MERCADOS Y LA COMPETENCIA - Energía eléctrica - Referencia: BOE-A-2026-17571 - KBytes: 444 - Páginas: 42"
+    }
+  ]
 }

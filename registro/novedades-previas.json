@@ -286,5 +286,23 @@
     "fecha_publicacion": "2026-08-11",
     "fecha_reportada": "2026-08-17",
     "semana": "2026-W34"
+  },
+  {
+    "id": "BOE-A-2026-17570",
+    "titulo": "Resolución de 30 de julio de 2026, de la Comisión Nacional de los Mercados y la Competencia, por la que se modifican las reglas de funcionamiento de los mercados diario e intradiario de electricidad para la implementación de 96 rondas de negociación en el mercado intradiario continuo.",
+    "fuente": "BOE/CNMC",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-08-11",
+    "fecha_reportada": "2026-08-24",
+    "semana": "2026-W35"
+  },
+  {
+    "id": "https://www.miteco.gob.es/es/energia/participacion.html#agregador-RD88-2026",
+    "titulo": "Propuesta de Resolución de la Secretaría de Estado de Energía por la que se desarrollan los aspectos técnicos necesarios para la aplicación del RD 88/2026 (agregador independiente): programa de referencia línea base, esquema de precios y compensación, adaptación de procedimientos de operación y contratación simultánea con múltiples comercializadoras",
+    "fuente": "MITECO",
+    "tema": "FLEXIBILIDAD",
+    "fecha_publicacion": "2026-08-14",
+    "fecha_reportada": "2026-08-24",
+    "semana": "2026-W35"
   }
 ]

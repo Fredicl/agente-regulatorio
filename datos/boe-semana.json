@@ -1,8 +1,13 @@
 {
-  "generado": "2026-08-24T08:00:41Z",
-  "rango_inicio": "2026-08-17",
-  "rango_fin": "2026-08-24",
+  "generado": "2026-08-25T07:50:30Z",
+  "rango_inicio": "2026-08-18",
+  "rango_fin": "2026-08-25",
   "total": 0,
-  "errores": [],
+  "errores": [
+    {
+      "feed": "https://www.boe.es/rss/boe.php?s=1",
+      "error": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+    }
+  ],
   "items": []
 }

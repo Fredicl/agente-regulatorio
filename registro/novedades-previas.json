@@ -322,5 +322,14 @@
     "fecha_publicacion": "2026-09-17",
     "fecha_reportada": "2026-09-21",
     "semana": "2026-W39"
+  },
+  {
+    "id": "https://www.cnmc.es/consultas-publicas/energia/propuesta-resolucion-mecanismo-de-intercambio-de-informacion",
+    "titulo": "CNMC consulta pública RDC/DE/002/26 — Propuesta de resolución mecanismo de intercambio de información entre gestor red de transporte y gestores redes de distribución sobre permisos de acceso y conexión (plazo obs. 30/10/2026)",
+    "fuente": "CNMC",
+    "tema": "FLEXIBILIDAD",
+    "fecha_publicacion": "2026-10-01",
+    "fecha_reportada": "2026-10-05",
+    "semana": "2026-W41"
   }
 ]

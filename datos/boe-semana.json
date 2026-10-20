@@ -1,8 +1,18 @@
 {
-  "generado": "2026-10-19T14:33:08Z",
-  "rango_inicio": "2026-10-12",
-  "rango_fin": "2026-10-19",
-  "total": 0,
+  "generado": "2026-10-20T12:39:21Z",
+  "rango_inicio": "2026-10-13",
+  "rango_fin": "2026-10-20",
+  "total": 1,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-B-2026-34151",
+      "titulo": "Resolución de la Dirección General de Política Energética y Minas por la que se otorga a Naturgy Renovables S.L.U. autorización administrativa de construcción para el módulo fotovoltaico \"El Almendro\", de 36 MW de potencia instalada y su infraestructura de evacuación, en el término municipal de El Almendro, en la provincia de Huelva, para su hibridación con el parque eólico existente PE El Almendro, y se declara, en concreto, su utilidad pública.",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-34151",
+      "seccion": "Seccion V - Anuncios",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-10-20",
+      "descripcion": "V. Anuncios. - B. Otros anuncios oficiales - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Referencia: BOE-B-2026-34151 - KBytes: 265 - Páginas: 11"
+    }
+  ]
 }

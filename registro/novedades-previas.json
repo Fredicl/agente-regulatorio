@@ -331,5 +331,14 @@
     "fecha_publicacion": "2026-10-01",
     "fecha_reportada": "2026-10-05",
     "semana": "2026-W41"
+  },
+  {
+    "id": "https://www.cnmc.es/consultas-publicas/energia/propuesta-eedd-establecimiento-criterios-evaluacion",
+    "titulo": "CNMC consulta pública RDC/DE/004/26 — Propuesta de resolución EEDD: establecimiento de criterios de evaluación de solicitudes de acceso y conexión DAB a la red DAR (plazo obs. 30/10/2026)",
+    "fuente": "CNMC",
+    "tema": "DISEÑO DE MERCADO",
+    "fecha_publicacion": "2026-10-01",
+    "fecha_reportada": "2026-10-26",
+    "semana": "2026-W44"
   }
 ]

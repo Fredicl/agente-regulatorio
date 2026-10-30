@@ -1,8 +1,18 @@
 {
-  "generado": "2026-10-29T14:05:26Z",
-  "rango_inicio": "2026-10-22",
-  "rango_fin": "2026-10-29",
-  "total": 0,
+  "generado": "2026-10-30T13:57:57Z",
+  "rango_inicio": "2026-10-23",
+  "rango_fin": "2026-10-30",
+  "total": 1,
   "errores": [],
-  "items": []
+  "items": [
+    {
+      "id": "BOE-A-2026-22779",
+      "titulo": "Resolución de 15 de octubre de 2026, de la Dirección General de Calidad y Evaluación Ambiental, por la que se formula informe de impacto ambiental del «Proyecto de hibridación \"PSFV OPDE Vallobar\", \"PSFV OPDE Plana de la Pena 1\" y \"PSFV OPDE Plana de la Pena 2\", de 26,74 MWp cada una, y sus infraestructuras de evacuación, en la provincia de Zaragoza».",
+      "link": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22779",
+      "seccion": "Seccion III - Otras disposiciones",
+      "tema": "BATERIAS",
+      "fecha_publicacion": "2026-10-30",
+      "descripcion": "III. Otras disposiciones - MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO - Impacto ambiental - Referencia: BOE-A-2026-22779 - KBytes: 796 - Páginas: 20"
+    }
+  ]
 }
